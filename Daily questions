@@ -1,0 +1,37 @@
+Daily questions
+
+#Q.1 print helloworld
+print("Hello World")
+
+#Q.2 Declare text data type variable and show the maximum size of text type in python
+name = "Sara Niaksatam"
+print(f"The capacity of text type (Sting) is {sys.getsizeof(name)}")
+The capacity of text type (Sting) is 55
+
+#Q.3 Write a code that show types and size of numeric data type (i.e int, float,complex)
+age = 21
+print(f"The capacity of numeric type (int) is {sys.getsizeof(age)}")
+The capacity of numeric type (int) is 28
+
+height = 173.33
+print(f"The capacity of numeric type (float) is {sys.getsizeof(height)}")
+The capacity of numeric type (float) is 24
+
+z = 5 + 7j
+print(f"The capacity of numeric type (complex) is {sys.getsizeof(z.real)}")
+The capacity of numeric type (complex) is 24
+
+#Write a code for boolean type and the max size it holds
+eligible = True
+print(eligible)
+True
+print(f"The capacity of the text type (Boolean) is {sys.getsizeof(eligible))}')
+
+#Write a program to declare various ways to declare a complex number and check which s real and which is imaginary
+x = 5
+y= 3
+print("The real part of complex number is:", z.real)
+The real part of complex number is: 5.0
+
+print("The imaginary part of complex number is:", z.imag)
+The imaginary part of complex number is: 7.0
