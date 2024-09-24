@@ -1,0 +1,101 @@
+import numpy as np
+np.__version__
+'2.1.1'
+arr = np.array([2,3,4,5])
+print("my array is : ",arr)
+my array is :  [2 3 4 5]
+#..............................................................
+
+zeros = np.zeros((3,2))
+print(zeros)
+[[0. 0.]
+ [0. 0.]
+ [0. 0.]]
+
+#...............................................................
+
+arr = np.array([1,2,3,4,5,6,7,8])
+print(arr)
+[1 2 3 4 5 6 7 8]
+reshape=arr.reshape((2,3))
+Traceback (most recent call last):
+  File "<pyshell#13>", line 1, in <module>
+    reshape=arr.reshape((2,3))
+ValueError: cannot reshape array of size 8 into shape (2,3)
+reshape=arr.reshape((2,4))
+print(f"post reshape array is :\n{reshape}")
+post reshape array is :
+[[1 2 3 4]
+ [5 6 7 8]]
+
+#................................................................
+#adding in array
+arr=np.array([20,30,40])
+print(arr)
+[20 30 40]
+result = arr + 6
+print(result)
+[26 36 46]
+
+#.................................................................
+#mean of an array
+arr = np.array([6,9,3])
+meanV=np.mean(arr)
+print(f"mean of above array is ", meanV)
+mean of above array is  6.0
+
+#..................................................................
+#concatenation in an array
+arr1=np.array([2,3,6])
+arr2=np.array([1,4,5])
+print(f"firs array contains ", arr1)
+firs array contains  [2 3 6]
+print(f"second array contains ",arr2)
+second array contains  [1 4 5]
+
+concatenate=np.concatenate((arr1,arr2))
+print(f"concatenated array is ")
+concatenated array is 
+print(f"concatenated array is ",concatenate)
+concatenated array is  [2 3 6 1 4 5]
+
+#....................................................................
+#array multiplication
+arr1=(2,4,6)
+arr2=(4,4,5)
+print(arr1,arr2)
+(2, 4, 6) (4, 4, 5)
+
+result=arr1*arr2
+Traceback (most recent call last):
+  File "<pyshell#47>", line 1, in <module>
+    result=arr1*arr2
+TypeError: can't multiply sequence by non-int of type 'tuple'
+#.....................................................................
+#array multiplication
+arr1=np.array([2,4,6])
+arr2=np.array([4,4,5])
+print(arr1,arr2)
+[2 4 6] [4 4 5]
+
+result=arr1*arr2
+print(result)
+[ 8 16 30]
+#.........................................................................
+#matrix multiplication
+matrix1 = np.array([[1,2],[3,4]])
+matrix2 = np.array([[5,6],[7,8]])
+print(matrix1matrix2)
+Traceback (most recent call last):
+  File "<pyshell#60>", line 1, in <module>
+    print(matrix1matrix2)
+NameError: name 'matrix1matrix2' is not defined
+print(matrix1,matrix2)
+[[1 2]
+ [3 4]] [[5 6]
+ [7 8]]
+
+result=np.matmul(matrix1,matrix2)
+print(result)
+[[19 22]
+ [43 50]]
