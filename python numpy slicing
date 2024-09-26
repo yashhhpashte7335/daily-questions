@@ -1,0 +1,42 @@
+Q1.
+import numpy as np
+
+array = np.empty(30)
+
+# Use slicing to assign values
+array[:10] = 0 
+array[10:20] = 1  
+array[20:] = 5  
+
+print(array)
+
+Q2.
+import numpy as np
+
+array = np.arange(2, 11)
+
+# Reshape using slicing
+matrix = array.reshape(3, 3)
+print(matrix)
+
+Q3.
+import numpy as np
+
+array = np.arange(12, 39)
+
+print(array)
+
+Q4.
+import numpy as np
+
+my_list = [1, 2, 3, 4, 5, 6, 7, 8]
+my_tuple = ([8, 4, 6], [1, 2, 3])
+
+array_from_list = np.array(my_list)
+array_from_tuple = np.array(my_tuple)
+
+list_slice = array_from_list[:] 
+tuple_slice = array_from_tuple[:] 
+
+print("Array from list:", list_slice)
+print("Array from tuple:", tuple_slice)
